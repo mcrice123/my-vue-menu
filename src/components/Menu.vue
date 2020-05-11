@@ -1,5 +1,5 @@
 <template>
-    <section id="menu" class="hero is-info is-large">
+    <section id="menu" class="hero is-dark is-medium ocean-bg">
         <top-nav :title="title" :links="topLinks"></top-nav>
 
         <div class="hero-body">

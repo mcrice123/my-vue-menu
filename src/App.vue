@@ -84,4 +84,10 @@
     #content {
         min-height: 200px;
     }
+    .ocean-bg {
+        background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('/ocean.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
 </style>

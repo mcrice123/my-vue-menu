@@ -19,3 +19,9 @@
         }
     }
 </script>
+
+<style scoped>
+    .hero.is-dark .tabs.is-boxed a:hover, .hero.is-dark .tabs.is-toggle {
+        background-color: rgba(10, 10, 10, 0.5);
+    }
+</style>
