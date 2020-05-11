@@ -1,6 +1,6 @@
 <template>
-    <section class="hero is-info is-large">
-        <top-nav :title="title"></top-nav>
+    <section id="menu" class="hero is-info is-large">
+        <top-nav :title="title" :links="topLinks"></top-nav>
 
         <div class="hero-body">
             <div class="container has-text-centered">
@@ -13,43 +13,21 @@
             </div>
         </div>
 
-        <div class="hero-foot">
-            <nav class="tabs is-boxed is-fullwidth">
-                <div class="container">
-                    <ul>
-                        <li class="is-active">
-                            <a>Overview</a>
-                        </li>
-                        <li>
-                            <a>Modifiers</a>
-                        </li>
-                        <li>
-                            <a>Grid</a>
-                        </li>
-                        <li>
-                            <a>Elements</a>
-                        </li>
-                        <li>
-                            <a>Components</a>
-                        </li>
-                        <li>
-                            <a>Layout</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <bottom-nav :links="bottomLinks"></bottom-nav>
     </section>
 </template>
 
 <script>
     import TopNav from './TopNav.vue';
+    import BottomNav from './BottomNav.vue';
 
     export default {
         name: 'Menu',
         props: {
             title: String,
-            subtitle: String
+            subtitle: String,
+            topLinks: Array,
+            bottomLinks: Array
         }, 
         data() {
             return {
@@ -57,9 +35,14 @@
             };
         },
         components: {
-            TopNav
+            TopNav, 
+            BottomNav
         }
     }
 </script>
 
-
+<style>
+    #menu {
+        margin-bottom: 40px;
+    }
+</style>
