@@ -30,15 +30,16 @@
 
 <style scoped>
     #back-to-top {
-        width: 100px;
+        width: 60px;
         position: fixed; 
         bottom: 10px;
         right: 20px;
     }
-
+    #back-to-top a img {
+        opacity: .5;
+    }
     #back-to-top a:hover img {
-        background-color: rgba(0, 0, 0, 0.1);
-
+        opacity: 1;
     }
     #vue-logo {
         transform: rotate(180deg);
