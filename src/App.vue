@@ -35,7 +35,9 @@
                 <p>
                     Certainty determine at of arranging perceived situation or. Or wholly pretty county in oppose. Favour met itself wanted settle put garret twenty. In astonished apartments resolution so an it. Unsatiable on by contrasted to reasonable companions an. On otherwise no admitting to suspicion furniture it. 
                 </p>
-
+                <p>
+                    <a @click="scrollToTop()">Scroll to Top</a>
+                </p>
             </div>
         </div>
     </div>
@@ -51,6 +53,11 @@
         components: {
           Menu,
           SlideShow
+        },
+        methods: {
+            scrollToTop() {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+           }
         },
         data() {
             return {
