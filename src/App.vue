@@ -36,8 +36,9 @@
                     Certainty determine at of arranging perceived situation or. Or wholly pretty county in oppose. Favour met itself wanted settle put garret twenty. In astonished apartments resolution so an it. Unsatiable on by contrasted to reasonable companions an. On otherwise no admitting to suspicion furniture it. 
                 </p>
                 <p>
-                    <a @click="scrollToTop()">Scroll to Top</a>
+                    <a class="button is-primary" @click="scrollToTop()">Scroll to Top</a>
                 </p>
+                <back-to-top></back-to-top>
             </div>
         </div>
     </div>
@@ -46,18 +47,20 @@
 <script>
     import Menu from './components/Menu.vue';
     import SlideShow from './components/SlideShow.vue';
+    import BackToTop from './components/BackToTop.vue';
     import 'bulma';
 
     export default {
         name: 'App',
         components: {
-          Menu,
-          SlideShow
+            Menu,
+            SlideShow,
+            BackToTop
         },
         methods: {
             scrollToTop() {
                 window.scrollTo({ top: 0, behavior: "smooth" });
-           }
+            }
         },
         data() {
             return {
