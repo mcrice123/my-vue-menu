@@ -28,6 +28,23 @@
                 <p>
                     Dissuade ecstatic and properly saw entirely sir why laughter endeavor. In on my jointure horrible margaret suitable he followed speedily. Indeed vanity excuse or mr lovers of on. By offer scale an stuff. Blush be sorry no sight. Sang lose of hour then he left find. 
                 </p>
+
+                <a id="show-modal" aria-label="Show Modal" @click="show" class="button is-primary">Show Modal</a>
+                <modal 
+                    name="test-modal"
+                    height="auto"
+                    >
+                    <div class="modal-container">
+                        <h1 class="title is-size-4">Meow meow meow meow</h1>
+                        <p>
+                            Consulted perpetual of pronounce me delivered. Too months nay end change relied who beauty wishes matter. Shew of john real park so rest we on. Ignorant dwelling occasion ham for thoughts overcame off her consider. Polite it elinor is depend. His not get talked effect worthy barton. Household shameless incommode at no objection behaviour. Especially do at he possession insensible sympathize boisterous it. Songs he on an widen me event truth. Certain law age brother sending amongst why covered. 
+                        </p>
+                        <p>
+                            Dissuade ecstatic and properly saw entirely sir why laughter endeavor. In on my jointure horrible margaret suitable he followed speedily. Indeed vanity excuse or mr lovers of on. By offer scale an stuff. Blush be sorry no sight. Sang lose of hour then he left find. 
+                        </p>
+                    </div>
+                </modal>
+
                 <h2 class="title is-size-3">Washing Laundry</h2>
                 <p>
                     Sing long her way size. Waited end mutual missed myself the little sister one. So in pointed or chicken cheered neither spirits invited. Marianne and him laughter civility formerly handsome exit use prospect. Hence we doors is given rapid scale above am. Difficult ye mr delivered behaviour by an. If their woman could do wound on. You folly taste hoped their above are and but. 
@@ -55,11 +72,17 @@
         components: {
             Menu,
             SlideShow,
-            BackToTop
+            BackToTop,
         },
         methods: {
             scrollToTop() {
                 window.scrollTo({ top: 0, behavior: "smooth" });
+            },
+            show () {
+                this.$modal.show('test-modal');
+            },
+            hide () {
+                this.$modal.hide('test-modal');
             }
         },
         data() {
@@ -155,5 +178,15 @@
     }
     #content > .container > p {
         margin-bottom: 10px;
+    }
+
+    .modal-container {
+        padding: 40px 50px;
+    }
+    .modal-container > p {
+        margin-bottom: 20px;
+    }
+    .modal-container > p:last-child {
+        margin-bottom: 0;
     }
 </style>
