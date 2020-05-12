@@ -4,9 +4,9 @@
 
         <div class="hero-body">
             <div class="container has-text-centered">
-                <p class="title">
+                <h1 class="title is-size-1">
                     {{ title }}
-                </p>
+                </h1>
                 <p v-if="subtitle" class="subtitle">
                     {{ subtitle }}
                 </p>
