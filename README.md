@@ -1,4 +1,10 @@
-# my-vue-menu
+# My Vue Menu 
+
+This project started as a repo solely for my new Menu component, built from scratch using [Vue](https://vuejs.org/). 
+Now it's become a sandbox for example components demonstrating the following useful tools: 
+
+* Slideshow (built with [Slick](https://www.npmjs.com/package/vue-slick-carousel))
+* Back To Top link (not visible at first, but then shows up after scrolling down a bit)
 
 ## Project setup
 ```
@@ -9,16 +15,3 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
