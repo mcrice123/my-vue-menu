@@ -25,7 +25,8 @@
 
 <style scoped>
     .slideshow {
-        width: 300px;
+        width: 100%;
+        max-width: 300px;
         height: 200px;
         padding-top: 20px;
         display: inline-block;

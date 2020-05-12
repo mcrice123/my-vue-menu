@@ -135,4 +135,7 @@
         background-repeat: no-repeat;
         background-position: 50% 50%;
     }
+    #content > .container {
+        margin: 0 10px;
+    }
 </style>
