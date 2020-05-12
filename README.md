@@ -6,7 +6,9 @@ Now it's become a sandbox for example components demonstrating the following use
 * Slideshow (built with [Slick](https://www.npmjs.com/package/vue-slick-carousel))
 * Back To Top link (not visible at first, but then shows up after scrolling down a bit)
 
-## Project setup
+## Here's how to run this project locally
+
+### Project setup
 ```
 npm install
 ```
