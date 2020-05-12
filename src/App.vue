@@ -35,6 +35,11 @@
                     height="auto"
                     >
                     <div class="modal-container">
+                         <div slot="top-right">
+                            <a class="delete" @click="$modal.hide('test-modal')">
+                            </a>
+                        </div>
+
                         <h1 class="title is-size-4">Meow meow meow meow</h1>
                         <p>
                             Consulted perpetual of pronounce me delivered. Too months nay end change relied who beauty wishes matter. Shew of john real park so rest we on. Ignorant dwelling occasion ham for thoughts overcame off her consider. Polite it elinor is depend. His not get talked effect worthy barton. Household shameless incommode at no objection behaviour. Especially do at he possession insensible sympathize boisterous it. Songs he on an widen me event truth. Certain law age brother sending amongst why covered. 
@@ -188,5 +193,8 @@
     }
     .modal-container > p:last-child {
         margin-bottom: 0;
+    }
+    .modal-container .delete {
+        float: right;
     }
 </style>
