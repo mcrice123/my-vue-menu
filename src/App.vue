@@ -33,6 +33,10 @@
                 <modal 
                     name="test-modal"
                     height="auto"
+                    width="90%"
+                    :max-width="800"
+                    scrollable
+                    adaptive
                     >
                     <div class="modal-container">
                          <div slot="top-right">
