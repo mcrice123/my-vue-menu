@@ -1,7 +1,7 @@
 <template>
     <div id="back-to-top" v-scroll="handleScroll">
         <a v-if="show" aria-label="Back to Top" @click="scrollToTop()">
-            <img id="vue-logo" src="http://localhost:8080/logo.png" alt="Vue Logo">
+            <img id="vue-logo" :src="image" :alt="alt">
         </a>
     </div>
 </template>
@@ -9,6 +9,10 @@
 <script>
     export default {
         name: 'BackToTop',
+        props: {
+            image: String, 
+            alt: String
+        },
         methods: {
             scrollToTop() {
                 window.scrollTo({ top: 0, behavior: "smooth" });

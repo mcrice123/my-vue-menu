@@ -60,7 +60,7 @@
                 <p>
                     <a class="button is-primary" @click="scrollToTop()">Scroll to Top</a>
                 </p>
-                <back-to-top></back-to-top>
+                <back-to-top image="http://localhost:8080/logo.png" alt="Vue Logo"></back-to-top>
             </div>
         </div>
     </div>
